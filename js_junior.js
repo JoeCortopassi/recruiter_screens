@@ -15,27 +15,19 @@ const question3 = "Create a function named `arrayInfo` that, when given an array
 /*  QUESTIONS END: DO NOT MODIFY  */
 
 
-function sum(a,b) {
-  return parseInt(a, 10) + parseInt(b,10);
-}
 
 
-function equals (a,b) {
-  return a === b;
-}
 
 
-function arrayInfo (arr) {
-  return {
-    min: Math.min(...arr),
-    max: Math.max(...arr),
-    average: (arr.reduce((a,b)=>a+b))/arr.length
-  };
-}
+
+
+
+
 
 
 /************************
  *
+ *   DO NOT COPY UNTIL CANDIDATE IS DONE
  *
  *   HOW TO CHECK TEST:
  *   - when candidate is done, copy everything below this comment to the space below their code.
