@@ -4,14 +4,15 @@
  *   HOW TO START TEST:
  *   - copy the three questions listed below on to their screen
  *   - remind them not to modify these three questions in any way 
+ *   - only leave the functions when done, no extra code
  *
  *
  ************************/
 
 /*  QUESTIONS START: DO NOT MODIFY  */
-const question1 = "Create a function named `sum` that takes two numbers, and gives the sum of those two numbers. Example: sum(2, 3), sum('12', 4)";
+const question1 = "Create a function named `sum` that takes two integer numbers, and gives the sum of those two numbers. Example: sum(2, 3), sum('12', 4)";
 const question2 = "Create a function named `equals` that tests for equality between two arguments. Example: equals(4, 4), equals('test', 'test')";
-const question3 = "Create a function named `arrayInfo` that, when given an array of integers, returns an object containing three properties: `min` for the smallest number in the array, `max` for the largest number in the array, and `average` for the average of all numbers in the array. Example: `arrayInfo([10,2,1,8,9])` would return the object `{min: 1, max: 10, average: 6}`";
+const question3 = "Create a function named `arrayInfo` that, when given an array of integers, returns an object containing three properties: `min` for the smallest number in the array, `max` for the largest number in the array, and `average` for the average of all numbers in the array. Example: `arrayInfo([10,2,1,8,9])` would return the object `{min: 1, max: 10, average: 6}`. You will always be given an array with only numbers, and you will always get at least one number";
 /*  QUESTIONS END: DO NOT MODIFY  */
 
 
@@ -87,14 +88,14 @@ const _tc_questions = [
       },
       {
         case: "correctly identifies when two inputs of the same type are not equal",
-        test: () => equals(1, 4) 
+        test: () => !equals(1, 4) 
       },
       {
         case: "uses strict equality comparison",
         test: () => !equals(2, "2") 
       },
       {
-        case: "correctly checks for deep equality of objects",
+        case: "correctly checks for deep equality of objects [Extra Credit]",
         test: () => {
           const a = { d: 3, e: [1,2,3] }; 
           const b = { d: 3, e: [1,2,3] }; 
